@@ -21,7 +21,7 @@ Zepto and Blinkit delivery partners operate on a promise of 10-minute deliveries
 Unlike food delivery, Q-commerce partners operate hyper-locally (within 2–3 km dark store radius). This means:
 - A single flooded road or zone closure can completely block their only operational area
 - The 10-minute SLA means platform apps themselves pause order assignment during disruptions
-- Income loss is near-instantaneous — no orders = no pay, within minutes of a disruption starting
+- Income loss is near-instantaneous No orders = No pay, within minutes of a disruption starting
 
 ### Persona-Specific Disruption Scenarios
 
@@ -220,7 +220,6 @@ gigshield/
 ├── docs/
 │   └── architecture.png       # System architecture diagram
 └── README.md
-
 ```
 
 ## 👥 Team
