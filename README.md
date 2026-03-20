@@ -4,7 +4,7 @@
 
 Zepto and Blinkit delivery partners operate on a promise of 10-minute deliveries. Their income is entirely dependent on order volume and hours worked. However, external disruptions — extreme weather, civic curfews, zone-level shutdowns — can bring deliveries to a complete halt, causing gig workers to lose 20–30% of their weekly earnings with zero protection.
 
-"EarnSafe" is an AI-enabled parametric income insurance platform that automatically detects disruptions, triggers claims, and pays out lost income all with zero paperwork and zero delays.
+**EarnSafe** is an AI-enabled parametric income insurance platform that automatically detects disruptions, triggers claims, and pays out lost income all with zero paperwork and zero delays.
 
 ---
 
@@ -63,7 +63,7 @@ Unlike food delivery, Q-commerce partners operate hyper-locally (within 2–3 km
 ## 💰 Weekly Premium Model
 
 ### Pricing Philosophy
-Gig workers are paid weekly. A monthly premium creates a cash-flow mismatch. GigShield aligns insurance costs with the worker's earning rhythm — pay weekly, get protected weekly.
+Gig workers are paid weekly. A monthly premium creates a cash-flow mismatch. EarnSafe aligns insurance costs with the worker's earning rhythm. Pay weekly, Get protected weekly.
 
 ### Base Weekly Premium Tiers
 
@@ -138,11 +138,9 @@ All triggers are objective, verifiable, and require zero manual claim filing.
 - **Charts/Dashboard:** Recharts
 - **Platform:** Web (mobile-responsive) — chosen for faster development and easier demo
 
-**Why Web over Mobile:** For a 6-week hackathon, a web app allows faster iteration, easier demo recording, and no app store constraints. The UI will be fully mobile-responsive for realism.
-
 ### Backend
 - **Primary API:** Python (FastAPI) — handles ML model serving, premium calculation, fraud scoring
-- **Secondary Services:** Node.js (Express) — handles real-time event streaming, WebSocket notifications, and parametric trigger monitoring
+- **Secondary Services:** Node.js (Express) — handles real-time event streaming, WebSocket notifications & parametric trigger monitoring
 - **Database:** PostgreSQL (worker profiles, policies, claims) + Redis (event dedup, session cache)
 - **Task Queue:** Celery + Redis for async payout processing
 
@@ -171,15 +169,15 @@ All triggers are objective, verifiable, and require zero manual claim filing.
 
 ## 📅 Development Plan
 
-### Phase 1 (Weeks 1–2): Ideation & Foundation ← Current
+### Phase 1 : Ideation & Foundation ← Current
 - [x] Define persona, disruption triggers, and weekly premium model
 - [x] Finalize tech stack
-- [ ] Set up GitHub repo with project structure
-- [ ] Create wireframes for onboarding, dashboard, and claim flow
-- [ ] Build synthetic training dataset for ML model
-- [ ] Record 2-minute strategy video
+- [x] Set up GitHub repo with project structure
+- [x] Create wireframes for onboarding, dashboard, and claim flow
+- [x] Build synthetic training dataset for ML model
+- [x] Record 2-minute strategy video
 
-### Phase 2 (Weeks 3–4): Automation & Protection
+### Phase 2 : Automation & Protection
 - [ ] Worker registration and onboarding flow
 - [ ] Policy creation with ML-driven weekly premium calculation
 - [ ] 5 parametric trigger monitors (weather + AQI + mock civic APIs)
@@ -187,7 +185,7 @@ All triggers are objective, verifiable, and require zero manual claim filing.
 - [ ] Basic fraud validation layer (GPS check + duplicate prevention)
 - [ ] Claims management UI
 
-### Phase 3 (Weeks 5–6): Scale & Optimise
+### Phase 3 : Scale & Optimise
 - [ ] Advanced fraud detection (Isolation Forest + cluster validation)
 - [ ] Razorpay test mode payout integration
 - [ ] Worker dashboard (earnings protected, weekly coverage status)
@@ -222,20 +220,8 @@ gigshield/
 ├── docs/
 │   └── architecture.png       # System architecture diagram
 └── README.md
+
 ```
-
----
-
-## 🔒 Coverage Exclusions (Per Contest Rules)
-
-GigShield strictly covers **loss of income only**. The following are explicitly excluded:
-- ❌ Health insurance or medical expenses
-- ❌ Life insurance
-- ❌ Accident or injury coverage
-- ❌ Vehicle repair or maintenance
-- ❌ Equipment damage
-
----
 
 ## 👥 Team
 
