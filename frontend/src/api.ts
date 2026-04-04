@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://localhost:8000' })
+const api = axios.create({ 
+  baseURL: 'https://earnsafe-backend-7pms.onrender.com'
+})
 
 export const registerWorker = (data: object) => api.post('/workers/register', data)
 export const getWorker = (id: number) => api.get(`/workers/${id}`)
